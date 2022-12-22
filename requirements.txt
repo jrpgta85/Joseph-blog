@@ -21,3 +21,4 @@ Werkzeug==2.2.2
 WTForms==3.0.1
 send_email==201212
 python-dotenv==0.15.0
+gunicorn==20.1.0
