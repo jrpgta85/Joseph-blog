@@ -12,11 +12,15 @@ from functools import wraps
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import os
+from dotenv import load_dotenv
 
+load_dotenv("C:/Users/jrpgt/Desktop/EnvironmentVariables/.env.txt")
+print(os.getenv("BlogConfigKey"))
 
 app = Flask(__name__)
 app.app_context().push()
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.getenv("BlogConfigKey")
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
