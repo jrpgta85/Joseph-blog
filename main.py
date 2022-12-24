@@ -18,6 +18,7 @@ from dotenv import load_dotenv
 # load_dotenv("C:/Users/jrpgt/Desktop/EnvironmentVariables/.env.txt")
 # print(os.getenv("BlogConfigKey"))
 
+
 app = Flask(__name__)
 app.app_context().push()
 app.config['SECRET_KEY'] = os.getenv("BlogConfigKey")
