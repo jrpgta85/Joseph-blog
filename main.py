@@ -15,8 +15,8 @@ from email.mime.text import MIMEText
 import os
 from dotenv import load_dotenv
 
-load_dotenv("C:/Users/jrpgt/Desktop/EnvironmentVariables/.env.txt")
-print(os.getenv("BlogConfigKey"))
+# load_dotenv("C:/Users/jrpgt/Desktop/EnvironmentVariables/.env.txt")
+# print(os.getenv("BlogConfigKey"))
 
 app = Flask(__name__)
 app.app_context().push()
