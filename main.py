@@ -15,6 +15,7 @@ from email.mime.text import MIMEText
 import os
 from dotenv import load_dotenv
 
+# Uncomment these two lines to run the code in Python for testing and updating the database.
 # load_dotenv("C:/Users/jrpgt/Desktop/EnvironmentVariables/.env.txt")
 # print(os.getenv("BlogConfigKey"))
 
